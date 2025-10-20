@@ -1,0 +1,16 @@
+{
+  "name": "hamlet-unified",
+  "version": "1.0.0",
+  "description": "Hamlet Unified - Election candidate platform",
+  "private": true,
+  "scripts": {
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/absulysuly/amlet-unified.git"
+  },
+  "keywords": ["election", "candidates", "platform"],
+  "author": "Hamlet Team",
+  "license": "MIT"
+}
