@@ -8,6 +8,7 @@ const app = express();
 const allowedOrigins = [
   'https://amlet-unified.vercel.app',
   'https://test-new-frontend.vercel.app',
+  'https://amlet-unified-absulysulys-projects.vercel.app',
   'http://localhost:3000',
   'http://localhost:3001'
 ];
