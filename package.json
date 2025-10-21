@@ -1,6 +1,6 @@
 {
   "name": "hamlet-unified",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Hamlet Unified - Election candidate platform",
   "private": true,
   "scripts": {
@@ -18,4 +18,3 @@
   "author": "Hamlet Team",
   "license": "MIT"
 }
-
