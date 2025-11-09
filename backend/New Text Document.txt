@@ -1,0 +1,31 @@
+import fs from "fs";
+import path from "path";
+import readline from "readline";
+
+const DATA_PATH = path.join(
+  process.cwd(),
+  "data",
+  "MASTER_CANDIDATES_7769.csv"
+);
+
+export async function importCandidates() {
+  try {
+    if (!fs.existsSync(DATA_PATH)) {
+      console.log("⚠️  No candidate file found at", DATA_PATH);
+      return;
+    }
+
+    const fileStream = fs.createReadStream(DATA_PATH, "utf8");
+    const rl = readline.createInterface({ input: fileStream, crlfDelay: Infinity });
+
+    let count = 0;
+    for await (const line of rl) {
+      if (!line.trim() || line.startsWith("ListID")) continue;
+      count++;
+    }
+
+    console.log(`✅ ${count.toLocaleString()} candidates imported successfully`);
+  } catch (err) {
+    console.error("❌ Import failed:", err);
+  }
+}

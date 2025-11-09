@@ -1,4 +1,4 @@
-﻿{
+{
   "name": "hamlet-backend",
   "version": "1.0.0",
   "type": "module",
@@ -10,7 +10,8 @@
     "node": ">=18"
   },
   "dependencies": {
-    "express": "^4.19.2",
-    "cors": "^2.8.5"
+    "cors": "^2.8.5",
+    "csv-parse": "^6.1.0",
+    "express": "^4.19.2"
   }
 }
